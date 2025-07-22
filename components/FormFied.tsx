@@ -1,5 +1,5 @@
 import React from "react";
-import { FormControl,FormDescription , FormItem , FormLabel, FormMessage } from "@/components/ui/form";
+import { FormControl , FormItem , FormLabel, FormMessage } from "@/components/ui/form";
 import {Input} from "@/components/ui/input";
 import {Controller, FieldValues , Path ,Control } from "react-hook-form";
 
@@ -19,10 +19,11 @@ const FormFied = ({control, name, label,placeholder , type="text"}: FormFieldPro
         <FormItem>
             <FormLabel className="label">{label}</FormLabel>
               <FormControl>
-               <Input className="input"
-                placeholder={placeholder}
-                type={type}
-                {...field} />
+               <Input 
+                  className="input"
+                  placeholder={placeholder}
+                  type={type}
+                  {...field} />
                 </FormControl>
                   <FormMessage />
        </FormItem>
